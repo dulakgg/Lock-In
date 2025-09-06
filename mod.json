@@ -1,0 +1,43 @@
+{
+	"geode": "4.7.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "dulak.lock_in",
+	"name": "Lock In",
+	"version": "v1.0.0",
+	"developer": "Dulak",
+	"description": "Prevents accidental level exits",
+	"dependencies": {
+		"geode.node-ids": ">=v1.20.0"
+	},
+	"settings": {
+		"confirm-unlock": {
+			"name": "Confirm unlock",
+			"description": "If you think this is overkill I have a friend who left the game with confirm exit on thrice at the very end of throat of the world",
+			"type": "bool",
+			"default": false
+		},
+		"disable-restart": {
+			"name": "Disable restart",
+			"description": "doesn't let you click r or restart button in pause menu",
+			"type": "bool",
+			"default": false
+		},
+		"disable-dt": {
+			"name": "Disable death tracker button",
+			"description": "On levels such as top 10000 cheese simply opening death tracker crashes your game (let's not talk about the top 10000 cheese room 14 incident)",
+			"type": "bool",
+			"default": false
+		},
+		"mod-on": {
+			"name": "lock exit",
+			"description": "you can switch it on and off here or in pause menu",
+			"type": "bool",
+			"default": false
+		}
+	}
+}
