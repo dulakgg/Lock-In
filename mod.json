@@ -18,7 +18,7 @@
 	"settings": {
 		"confirm-unlock": {
 			"name": "Confirm unlock",
-			"description": "If you think this is overkill I have a friend who left the game with confirm exit on thrice at the very end of throat of the world",
+			"description": "You think this is overkill, I think this is not enough, as I will still somehow find a way to accidentally exit on chapter 6 throat of the world for the 4th time",
 			"type": "bool",
 			"default": false
 		},
@@ -30,7 +30,19 @@
 		},
 		"disable-dt": {
 			"name": "Disable death tracker button",
-			"description": "On levels such as top 10000 cheese simply opening death tracker crashes your game (let's not talk about the top 10000 cheese room 14 incident)",
+			"description": "Opening death tracker in top 10000 cheese just uhh, crashes your game for no reason, and let's not talk about the top 10000 cheese room 14 incident",
+			"type": "bool",
+			"default": false
+		},
+		"options-disabled": {
+			"name": "Disable options from pause menu",
+			"description": "Various mod menus support the entire settings menu (not the small one you normally see) inside the pause menu, which obviously leads to a bunch of ways to crash",
+			"type": "bool",
+			"default": false
+		},
+		"auto-enable":{
+			"name": "Auto enable",
+			"description": "Automatically relocks when entering a level in case you unlocked last time, this is not overkill I swear",
 			"type": "bool",
 			"default": false
 		},

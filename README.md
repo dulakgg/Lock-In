@@ -1,9 +1,17 @@
-# LockIn
+# Lock In
 
 <img src="logo.png" width="150" alt="the mod's logo" />
 
-This mod prevents you from exiting, entering practice mode, or restarting a level with the simple press of a button in the top left corner in the pause menu, making it almost impossible for you to accidentally exit a level (I will still find a way to accidentally exit at chapter 6 of throat of the world for the 4th time). It also blocks keybinds like Ctrl+R.
+Hello everyone, this is NotAnAltAccount. ~~Dulak keeps me trapped in his basement, doesn't feed me, and forced me to write the description.~~
 
-Credits: Idea and description by @ NotAnAltAccount ~~Dulak keeps me trapped in his basement and doesn't feed me and forced me to write the description~~
+This mod prevents you from exiting, entering practice mode, or restarting a level with the simple press of a button in the top-left corner of the pause menu, making it almost impossible to accidentally exit a level.
 
-Version: v1.0.0
+It also prevents some annoying keybinds such as `Ctrl+R`.
+
+It also prevents some other mods from crashing your game, like death tracker, which just crashes your game if you open it in “top 10000 cheese” (let's not talk about the top 10000 cheese room 14 incident).
+
+TL;DR: This mod makes the pause menu idiot-proof, but I'll still find a way to accidentally leave the game in Throat of the World with confirm exit turned on for the 4th time.
+
+**Credits:** Idea and description by @NotAnAltAccount
+
+**Version:** v1.0.0

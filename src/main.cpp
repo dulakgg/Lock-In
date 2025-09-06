@@ -1,6 +1,7 @@
 #include <Geode/Geode.hpp>
 #include <Geode/modify/PauseLayer.hpp>
 #include <Geode/modify/PlayLayer.hpp>
+#include <Geode/modify/OptionsLayer.hpp>
 
 using namespace geode::prelude;
 
@@ -138,7 +139,13 @@ class $modify(MyPauseLayer, PauseLayer) {
 };
 
 class $modify(MyPlayLayer, PlayLayer) {
-
+	bool init(GJGameLevel* level, bool useReplay, bool dontCreateObjects) {
+		if (!PlayLayer::init(level, useReplay, dontCreateObjects)) return false;
+		if (!Mod::get()->getSettingValue<bool>("mod-on") && Mod::get()->getSettingValue<bool>("auto-enable")) {
+			Mod::get()->setSettingValue<bool>("mod-on", true);
+		}
+		return true;
+	}
 	void resetLevel() {
 		if (Mod::get()->getSettingValue<bool>("mod-on") && Mod::get()->getSettingValue<bool>("disable-restart")) {
 			return;
@@ -152,6 +159,18 @@ class $modify(MyPlayLayer, PlayLayer) {
 			return;
 		} else {
 			PlayLayer::fullReset();
+		}
+	}
+
+
+};
+
+class $modify(MyOptionsLayer, OptionsLayer) {
+	void onOptions(CCObject* sender) {
+		if (Mod::get()->getSettingValue<bool>("mod-on") && Mod::get()->getSettingValue<bool>("options-disabled")) {
+			return;
+		} else {
+			OptionsLayer::onOptions(sender);
 		}
 	}
 };
