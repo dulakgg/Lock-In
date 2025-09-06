@@ -11,6 +11,7 @@
 	"version": "v1.0.0",
 	"developer": "Dulak",
 	"description": "Prevents accidental level exits",
+	"tags": ["offline", "interface", "utility"],
 	"dependencies": {
 		"geode.node-ids": ">=v1.20.0"
 	},
