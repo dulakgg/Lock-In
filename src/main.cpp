@@ -16,9 +16,9 @@ class $modify(MyPauseLayer, PauseLayer) {
 
 	void updateSkullButtonState() {
 		if (Mod::get()->getSettingValue<bool>("disable-dt") && Mod::get()->getSettingValue<bool>("mod-on")) {
-			auto menu = as<CCMenu*>(this->getChildByID("left-button-menu"));
+			auto menu = typeinfo_cast<CCMenu*>(this->getChildByID("left-button-menu"));
 			if (!menu) return;
-			if (auto skull = as<CCMenuItem*>(menu->getChildByID("dt-skull-button"))) {
+			if (auto skull = typeinfo_cast<CCMenuItem*>(menu->getChildByID("dt-skull-button"))) {
 				bool locked = Mod::get()->getSettingValue<bool>("mod-on");
 				skull->setEnabled(!locked);
 			}
@@ -28,8 +28,8 @@ class $modify(MyPauseLayer, PauseLayer) {
 	void showTooltip(const char* text) {
 		CCPoint anchorPos;
 		bool haveAnchor = false;
-		if (auto menu = as<CCMenu*>(this->getChildByID("left-button-menu"))) {
-			if (auto btn = as<CCNode*>(menu->getChildByID("locked-in-btn"_spr))) {
+		if (auto menu = typeinfo_cast<CCMenu*>(this->getChildByID("left-button-menu"))) {
+			if (auto btn = typeinfo_cast<CCNode*>(menu->getChildByID("locked-in-btn"_spr))) {
 				auto world = btn->getParent()->convertToWorldSpace(btn->getPosition());
 				anchorPos = this->convertToNodeSpace(world);
 				haveAnchor = true;
@@ -40,7 +40,7 @@ class $modify(MyPauseLayer, PauseLayer) {
 		if (!label) return;
 		label->setScale(0.35f);
 		label->setOpacity(0);
-		label->setAnchorPoint({0.5f, 0.0f});
+		label->setAnchorPoint({0.4f, 1.f});
 
 		if (haveAnchor) {
 			label->setPosition(anchorPos + ccp(0, 28));

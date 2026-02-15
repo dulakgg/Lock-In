@@ -1,19 +1,26 @@
 {
-	"geode": "4.7.0",
+	"geode": "5.0.0-beta.1",
 	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
 	},
 	"id": "dulak.lock_in",
 	"name": "Lock In",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "Dulak",
 	"description": "Prevents accidental level exits",
 	"tags": ["offline", "interface", "utility"],
+	"links": {
+		"source": "https://github.com/dulakgg/Lock-In/"
+	},
+	"issues": {
+		"info": "Submit problems on repo page (github) or @dulakgg on Discord.",
+		"url": "https://github.com/dulakgg/Lock-In/issues"
+	},
 	"dependencies": {
-		"geode.node-ids": ">=v1.20.0"
+		"geode.node-ids": ">=v1.22.0"
 	},
 	"settings": {
 		"confirm-unlock": {

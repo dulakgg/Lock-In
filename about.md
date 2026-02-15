@@ -12,4 +12,4 @@ TL;DR: This mod makes the pause menu idiot-proof, but I'll still find a way to a
 
 **Credits:** Idea and description by @NotAnAltAccount
 
-**Version:** v1.0.0
+**Version:** v1.0.1
