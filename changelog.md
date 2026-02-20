@@ -1,6 +1,9 @@
+# 1.0.2
+- fixes
+
 # 1.0.1
 - Changed mod logo (finally looks normal)
-- Bumped version to geode 5.0.0-beta.1 
+- Bumped version to geode 5.0.0-beta.3
 
 # 1.0.0
 - Lock toggle button in Pause menu (prevents accidental Quit/Restart when enabled).
